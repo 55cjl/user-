@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* 设置编码 */
+/* 导入文件 */
+/* css初始化 */
+body, ul, ol, h1, h2, h3, h4, h5, h6, p, div, dl, dt, dd, li, pre, input, form, textarea, th, td {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  font: 15px 微软雅黑 宋体 楷体;
+  background: #fff; }
+
+/* 取消a链接下划线 */
+/* 边框合并 */
+/* 取消项目符号 */
+li {
+  list-style: none; }
+
+/* 取消外轮廓 */
+input {
+  outline: none; }
+
+/* 父级用伪对象清除子级浮动 
+clear    清除浮动
+*/
+.clear::after {
+  content: ' ';
+  /* 变成块级元素 */
+  display: block;
+  /* 清除左/右浮动 */
+  clear: both; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.bold {
+  font-weight: bold; }
+
+body {
+  margin: 10px;
+  overflow: hidden; }
+  body .top {
+    overflow: hidden;
+    margin-top: 30px; }
+    body .top .menu {
+      text-indent: 2em; }
+      body .top .menu .menu-item {
+        margin: 0 5px; }
+  body .center {
+    overflow: hidden; }
+    body .center .user a {
+      margin: 0 5px; }
+
+/*# sourceMappingURL=index.css.map */

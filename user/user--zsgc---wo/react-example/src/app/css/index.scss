@@ -1,0 +1,76 @@
+/* 设置编码 */
+@charset 'UTF-8';
+
+/* 导入文件 */
+// @import 'qq';
+
+/* css初始化 */
+// 让网页强制出现浏览器的滚动条
+// body{overflow: scroll;}
+body,ul,ol,h1,h2,h3,h4,h5,h6,p,div,dl,dt,dd,li,pre,input,form,textarea,th,td{margin: 0; padding: 0;}
+html,body{font: 15px 微软雅黑 宋体 楷体; background: #fff;}
+/* 取消a链接下划线 */
+// a{text-decoration: none; color: #333;}
+/* 边框合并 */
+// table{border-collapse: collapse;}
+/* 取消项目符号 */
+li{list-style: none;}
+/* 取消外轮廓 */
+input{ outline: none; }
+/* 父级用伪对象清除子级浮动 
+clear    清除浮动
+*/
+.clear::after{
+    content: ' ';
+    /* 变成块级元素 */
+    display: block; 
+    /* 清除左/右浮动 */
+    clear: both;
+}
+
+// 左浮动
+.fl {
+    float: left;
+}
+// 右浮动
+.fr {
+    float: right;
+}
+// 加粗字体
+.bold {
+    font-weight: bold;
+}
+// 改变字体大小
+// #fs{
+//     font-size: 18px;
+// }
+
+
+
+
+
+body{
+    margin: 10px;
+    overflow: hidden;
+    .top{
+        overflow: hidden;
+        margin-top: 30px;
+        .menu{
+            text-indent: 2em;
+            .menu-item{
+                margin: 0 5px;
+            }
+        }
+    }
+    .center{
+        overflow: hidden;
+        // text-indent: 1em;
+        .user{
+            a{
+                margin: 0 5px;
+            }
+        }
+    }
+    // .bottom{}
+
+}
